@@ -11,6 +11,15 @@ img {
     width: 100%;
 }
 
+.btn {
+    color: #fff;
+    background-color: #4a4a4a;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
 /* conteiner */
 
 .conteiner {
@@ -20,33 +29,25 @@ img {
     flex-direction: column;
 }
 
-#top-bar {
+/* top bar */
+.top-bar {
     background-color: black;
     width: 100%;
-    height: 100px;
+    height: 80px;
     padding: 5px;
     display: flex;
     justify-content: flex-end;
 }
 
-.btn {
-    color: #fff;
-    background-color: #4a4a4a;
-    font-size: 15px;
-    padding: 5px;
-    border-radius: 10px;
-    text-transform: none;
-    flex-basis: content;
-}
-
-#classroom {
+/* classroom */
+.classroom {
     background-color: black;
     width: 100%;
-    height: calc(100% - 200px);
+    height: calc(100% - 180px);
     overflow-y: auto;
 }
 
-#webcam-conteiner {
+.webcam-conteiner {
     width: 80%;
     max-width: 1980px;
     margin: 30px auto;
@@ -55,18 +56,9 @@ img {
     flex-wrap: wrap;
 }
 
-#classroom-controller {
-    width: 100%;
-    height: 150px;
-    background-color: #222222;
-}
-
-/* classroom */
-
 .webcam-user {
     margin: 20px 5px;
     position: relative;
-    flex-basis: auto;
 }
 
 .name-user {
@@ -77,4 +69,46 @@ img {
     bottom: 0;
     left: 0;
 
+}
+
+/* classroom controller */
+.classroom-controller {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-color: #222222;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hot-keys, .settings-meeting {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.classroom-controller i {
+    font-size: 25px;
+}
+
+.angle > i {
+    font-size: 15px;
+}
+
+.hot-keys > div, .settings-meeting > div  {
+    padding: 0 10px;
+}
+
+.btn-share > i {
+    color: #4ac800;
+}
+
+.close-meeting {
+    color: #d01800;
+    background-color: #4a4a4a;
+    height: 100px;
+    padding: 20px;
+    border: none;
 }
